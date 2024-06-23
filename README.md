@@ -1,92 +1,110 @@
-Movie Image Display
+
+# Movie Image Display
+
 This project is a simple web application that uses the TV Maze API to fetch and display images of movies. The main functionality of the application is to search for movies and display their poster images.
 
-Table of Contents
-Installation
-Usage
-Features
-API Reference
-Contributing
-License
-Acknowledgements
-Installation
-Clone the repository:
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Features](#features)
+- [API Reference](#api-reference)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgements](#acknowledgements)
 
-bash
-Copy code
-git clone https://github.com/yourusername/movie-image-display.git
-cd movie-image-display
-Install dependencies:
+## Installation
 
-For the server-side (if applicable):
+1. **Clone the repository:**
 
-bash
-Copy code
-npm install
-For the client-side:
+    ```bash
+    git clone https://github.com/yourusername/movie-image-display.git
+    cd movie-image-display
+    ```
 
-bash
-Copy code
-# No additional dependencies needed if using vanilla HTML/CSS/JS
-Start the application:
+2. **Install dependencies:**
 
-bash
-Copy code
-npm start
-Or open index.html directly in your browser if it's a static site.
+    For the server-side (if applicable):
+    ```bash
+    npm install
+    ```
 
-Usage
-Open the application:
+    For the client-side:
+    ```bash
+    # No additional dependencies needed if using vanilla HTML/CSS/JS
+    ```
 
-Navigate to http://localhost:3000 in your browser if running a local server, or open index.html directly.
+3. **Start the application:**
 
-Search for a movie:
+    ```bash
+    npm start
+    ```
 
-Use the search bar to enter the name of the movie you are looking for.
+    Or open `index.html` directly in your browser if it's a static site.
 
-View the movie image:
+## Usage
 
-The application will display the poster image of the movie fetched from the TV Maze API.
+1. **Open the application:**
 
-Features
-Search Functionality: Users can search for movies by their names.
-Image Display: Displays the poster image of the searched movie.
-Responsive Design: Ensures the website is usable on various devices and screen sizes.
-API Reference
-This application uses the TV Maze API to fetch movie data.
+    Navigate to `http://localhost:3000` in your browser if running a local server, or open `index.html` directly.
 
-Endpoints
-Search for a movie:
+2. **Search for a movie:**
 
-http
-Copy code
-GET http://api.tvmaze.com/search/shows?q=:query
-Parameters:
+    Use the search bar to enter the name of the movie you are looking for.
 
-query: The name of the movie to search for.
-Contributing
-Fork the repository.
+3. **View the movie image:**
 
-Create a new branch:
+    The application will display the poster image of the movie fetched from the TV Maze API.
 
-bash
-Copy code
-git checkout -b feature-name
-Make your changes and commit them:
+## Features
 
-bash
-Copy code
-git commit -m 'Add some feature'
-Push to the branch:
+- **Search Functionality:** Users can search for movies by their names.
+- **Image Display:** Displays the poster image of the searched movie.
+- **Responsive Design:** Ensures the website is usable on various devices and screen sizes.
 
-bash
-Copy code
-git push origin feature-name
-Create a pull request.
+## API Reference
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This application uses the [TV Maze API](https://www.tvmaze.com/api) to fetch movie data.
 
-Acknowledgements
-TV Maze API for providing the movie data.
-Inspiration and guidance from various online resources and tutorials.
+### Endpoints
+
+- **Search for a movie:**
+
+    ```http
+    GET http://api.tvmaze.com/search/shows?q=:query
+    ```
+
+    **Parameters:**
+    - `query`: The name of the movie to search for.
+
+## Contributing
+
+1. **Fork the repository.**
+
+2. **Create a new branch:**
+
+    ```bash
+    git checkout -b feature-name
+    ```
+
+3. **Make your changes and commit them:**
+
+    ```bash
+    git commit -m 'Add some feature'
+    ```
+
+4. **Push to the branch:**
+
+    ```bash
+    git push origin feature-name
+    ```
+
+5. **Create a pull request.**
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgements
+
+- [TV Maze API](https://www.tvmaze.com/api) for providing the movie data.
+- Inspiration and guidance from various online resources and tutorials.
